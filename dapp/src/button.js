@@ -5,12 +5,11 @@ import {ConnectButton,getDefaultConfig,RainbowKitProvider,} from '@rainbow-me/ra
 import { WagmiProvider } from 'wagmi';
 import {
   mainnet,
-  polygon,
+  sepolia,
   optimism,
   arbitrum,
   base,
-  zora,
-  polygonMumbai,
+  zora
 } from 'wagmi/chains';
 import {
   QueryClientProvider,
@@ -20,7 +19,7 @@ import {
 const config = getDefaultConfig({
   appName: 'My RainbowKit App',
   projectId: 'YOUR_PROJECT_ID',
-  chains: [polygonMumbai],
+  chains: [sepolia],
   ssr: true, // If your dApp uses server side rendering (SSR)
 });
 const queryClient = new QueryClient();
